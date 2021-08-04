@@ -1,4 +1,67 @@
-.App {
+body {
   font-family: sans-serif;
+}
+
+input {
+  border-radius: 16px;
+  border: none; /* 外枠 */
+  padding: 6px 16px; /* 上下　左右 */
+  outline: none; /* フォーカスした際の枠線 */
+}
+
+button {
+  border-radius: 16px;
+  border: none;
+  padding: 4px 16px;
+}
+
+button:hover {
+  /*　ホバーした際の動き */
+  background-color: #ff7fff;
+  color: #fff; /* 文字色 */
+  cursor: pointer; /* ホバーインした際のカーソル */
+}
+
+li {
+  margin-right: 8px;
+}
+
+.input-area {
+  background-color: #c1ffff;
+  width: 400px;
+  height: 30px;
+  padding: 8px; /* 内側の余白 */
+  margin: 8px; /* 外側の余白 */
+  border-radius: 8px; /* 角の丸さ */
+}
+
+.incomplete-area {
+  background-color: #c6ffe2;
+  width: 400px;
+  min-height: 200px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.complete-area {
+  background-color: #ffffe0;
+  width: 400px;
+  min-height: 200px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.title {
   text-align: center;
+  margin-top: 0; /* 上の余白 */
+  font-weight: bold; /* 太字 */
+  color: #666;
+}
+
+.list-row {
+  display: flex; /* いろいろあるけど横並び */
+  align-items: center; /*文字とボタンの位置調整(中段揃え) */
+  padding-bottom: 4px; /* 下の余白 */
 }
